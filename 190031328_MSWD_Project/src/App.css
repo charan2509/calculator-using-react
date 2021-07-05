@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+*{
+  font-family: 'Nunito', sans-serif;
+
+}
+
+body
+{  background: #3494E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.cont
+{
+  background-color: #000000af;
+    top: 50%;
+    left: 50%;
+
+    position: absolute;
+    box-shadow:3px 6px 15px rgb(15, 15, 15);
+    transform: translate(-50%,-50%);
+    padding: 10px;
+    margin: 0 auto;
+    width: 650px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.keypad
+{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-auto-rows: minmax(60px,auto);
+}
+
+input
+{
+    font-size: xxx-large;
+    height: 75px;
+    color: white;
+    width: 600px;
+    background-color: transparent;
+    padding: 12px;
+    border: none;
+    outline: none;
+    text-align: right;
+    border-radius: 2px;
+    font-weight: 600;
+}
+
+#zero
+{
+    grid-column:1/3 ;
+    grid-row: 5;
+}
+
+#result
+{
+  grid-row: 5;
+  grid-column: 4/6;
+}
+
+button
+{
+    margin:10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 15px;
+    font-weight: 550;
+    background-color: #525252a1;
+    color: rgb(224, 224, 224);
+    font-size: xx-large;
+
+}
+button:hover
+{
+background-color: #757575;
+transition: 0.33s;
+}
+
+.hil
+{
+    background-color:#023F6E;
+    color: rgb(255, 255, 255);
+}
+.hil:hover
+{
+  background-color: #023F6Ea1;
+  transition: 0.33s;
+  }
+
+.hil2
+{
+  background-color: #A5A5A5;
+  color: black;
+}
+
+.hil2:hover
+{
+  background-color: #cfcfcf;
+  transition: 0.33s;
+  }
+
+  .hist{
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    background-color:rgba(255, 255, 255, 0.76);
+    padding: 30px;
+    width:500px;
+    font-weight: 600;
+    border-radius: 20px;
+    font-size: large;
+    text-align: center;
+  }
+  .his{
+    background-color:transparent;
+    border: 1px solid #4285f4;
+    color: #4285f4;
+    height:50px;
+    width:150px;
+    font-weight: 600;
+    font-size:medium;
+  }
+  .his:hover{
+    background-color:#4285f4;
+    color:white;
+  }
