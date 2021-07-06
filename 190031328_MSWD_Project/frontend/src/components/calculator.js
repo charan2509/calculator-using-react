@@ -4,7 +4,7 @@ const Calculator = ()=> {
   const [result,setResult]=useState("")
   const calculate=()=>{
     try{
-    // eslint-disable-next-line
+  // eslint-disable-next-line
    var ans = eval(result).toString()
     Axios.post("http://localhost:3001/insert",{
     history: result + " = " + ans,
